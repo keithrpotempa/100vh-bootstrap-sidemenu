@@ -1,0 +1,55 @@
+.account-sidebar {
+  max-width: 360px;
+}
+
+.account-sidebar.collapse.show,
+.account-sidebar.collapse.show + .col {
+  transition: 0.18s linear;
+  right: 0;
+  top: 0;
+  box-shadow: 0px 0px 10px 0px black;
+  bottom: 0;
+}
+
+.account-sidebar.collapse.show + .col .container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.scroll-lock {
+  overflow-y: hidden;
+}
+
+.account-sidebar.collapse,
+.account-sidebar.collapsing,
+.account-sidebar.collapsing + .col {
+  transition: 0.18s linear;
+  z-index: 1050;
+  right: -25%;
+  top: 0;
+  height: auto !important;
+  box-shadow: 0px 0px 10px 0px black;
+  overflow-y: initial;
+}
+
+.blog-card-collapse-button {
+  outline: none;
+}
+
+a {
+  color: inherit !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.toast {
+  box-shadow: none;
+  border: 2px solid #d9dbdf;
+  border-radius: 5px;
+}
+
+.blog-card {
+  max-width: 350px;
+}
