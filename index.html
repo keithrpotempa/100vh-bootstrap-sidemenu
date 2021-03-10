@@ -13,10 +13,10 @@
           <a
             href="#"
             data-toggle="collapse"
-            data-target="#accountSidebar"
-            aria-controls="accountSidebar"
+            data-target="#sidebar"
+            aria-controls="sidebar"
             role="button"
-            id="accountSidebarOpenButton"
+            class="sidebar-open-button"
           >
             <i class="fas fa-user-circle fa-3x text-success"></i>
           </a>
@@ -24,8 +24,8 @@
 
         <!-- Sidebar -->
         <div
-          class="col-11 col-md-5 col-lg-4 col-xl-3 collapse account-sidebar position-fixed float-right vh-100 bg-white px-0"
-          id="accountSidebar"
+          class="col-11 col-md-5 col-lg-4 col-xl-3 collapse sidebar position-fixed float-right vh-100 bg-white px-0"
+          id="sidebar"
         >
           <div class="container px-0">
             <div
@@ -37,12 +37,11 @@
                 <div class="row justify-content-end mx-0 mt-2">
                   <a
                     href="#"
-                    class="float-right h5"
+                    class="sidebar-close-button float-right h5"
                     data-toggle="collapse"
-                    data-target="#accountSidebar"
-                    aria-controls="accountSidebar"
+                    data-target="#sidebar"
+                    aria-controls="sidebar"
                     role="button"
-                    id="accountSidebarCloseButton"
                   >
                     <i class="fas fa-times"></i>
                   </a>
@@ -266,51 +265,75 @@
           </div>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu
-          pulvinar nibh. Maecenas in elementum mauris. Proin semper mattis
-          ligula ut egestas. Pellentesque et erat quis eros commodo tincidunt.
-          Morbi varius urna sit amet leo tristique, fringilla tempus dolor
-          aliquet. Maecenas rutrum quam eu diam varius sollicitudin. Nulla nulla
-          dolor, gravida ac dui ut, molestie tincidunt mi. Morbi in lobortis
-          enim. Maecenas quis justo ac dui fringilla aliquam. Praesent sit amet
-          mi eros. Fusce bibendum arcu mauris, non porttitor augue commodo
-          vitae. Donec ante metus, dictum a viverra eu, hendrerit ac libero.
-          Fusce nisl dolor, hendrerit sit amet sapien et, molestie accumsan dui.
-          Ut blandit vel ligula et maximus. Orci varius natoque penatibus et
-          magnis dis parturient montes, nascetur ridiculus mus. Etiam ac euismod
-          orci. Suspendisse vel eros justo. Phasellus rhoncus dolor ac nunc
-          euismod facilisis. Sed scelerisque feugiat nisl, ut eleifend ante
-          interdum id. Nulla pulvinar euismod ultrices. Fusce nunc est, finibus
-          non vehicula sed, laoreet a massa. Quisque mollis ut nisl vitae
-          dignissim. Proin id nibh placerat metus dapibus bibendum at nec leo.
-          Donec mauris justo, tempus nec interdum nec, ornare dapibus lorem. Sed
-          quis elit consectetur, luctus nisl vitae, gravida tortor. Sed placerat
-          aliquet rutrum. Curabitur sodales nunc consequat erat hendrerit
-          consectetur. Etiam placerat eros et eros ornare ornare. Aenean pretium
-          malesuada nibh id vehicula. Morbi at ex sit amet urna scelerisque
-          malesuada. Maecenas facilisis elit nec magna mollis, ut viverra risus
-          egestas. Proin at magna orci. In sed urna egestas, euismod quam et,
-          ultricies sapien. In accumsan euismod nisi eu maximus. Cras porttitor
-          libero ut turpis vehicula tincidunt. Nullam eu libero et arcu
-          hendrerit varius. Phasellus id nisl ac sapien sagittis pulvinar ac a
-          odio. Ut aliquam fringilla dui. Aliquam malesuada erat eget mi maximus
-          placerat. Donec mollis, sem non egestas euismod, neque libero pretium
-          magna, eu pellentesque purus purus a ex. Suspendisse a ex sed eros
-          fermentum convallis sed nec nisi. Sed vel libero et augue placerat
-          iaculis sed eget nisi. Ut scelerisque ut est ac elementum. Fusce
-          dapibus id tellus nec eleifend. Sed eu mauris id urna hendrerit
-          egestas. Nunc ac elementum odio. Sed rutrum nibh sem, non rutrum mi
-          molestie a. Pellentesque quam sapien, dignissim sit amet enim vel,
-          tincidunt sagittis nulla. Curabitur ultrices luctus purus, a commodo
-          ipsum. Orci varius natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Nunc eu tortor nulla. Nunc dolor mauris,
-          fermentum eget nisl sed, lacinia sollicitudin mauris. Morbi congue
-          justo vel tortor condimentum, quis dapibus purus egestas. Fusce felis
-          purus, consequat sed tristique id, feugiat vel dui. Vestibulum varius
-          rhoncus justo, id gravida turpis semper vel. Integer aliquet ligula id
-          volutpat auctor. Vivamus a ante urna. Cras sit amet nisl sit amet
-          metus pretium egestas.
+          <h1>Open the Sidebar with the Avatar Above</h1>
+          <strong>Pellentesque habitant morbi tristique</strong> senectus et
+          netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+          feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+          sit amet quam egestas semper.
+          <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo.
+          Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat
+          wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet,
+          wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum
+          rutrum orci, sagittis tempus lacus enim ac dui.
+          <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.
         </p>
+
+        <h2>Note How It Locks the Body Y Scroll, But Allows Y Scroll of the Sidebar</h2>
+
+        <ol>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+          <li>Aliquam tincidunt mauris eu risus.</li>
+        </ol>
+
+        <blockquote>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            magna. Cras in mi at felis aliquet congue. Ut a est eget ligula
+            molestie gravida. Curabitur massa. Donec eleifend, libero at
+            sagittis mollis, tellus est malesuada tellus, at luctus turpis elit
+            sit amet quam. Vivamus pretium ornare est.
+          </p>
+        </blockquote>
+
+        <h3>
+          <a
+            href="#"
+            class="sidebar-open-button btn btn-success rounded-pill px-4 py-3 my-3 text-white"
+          >
+            <i class="fas fa-hat-wizard mr-2"></i>
+            <span class="font-weight-bold">OPEN</span>
+          </a>
+          the Sidebar Anywhere Without Losing the Body's Y Position
+        </h3>
+        
+
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+          <li>Aliquam tincidunt mauris eu risus.</li>
+        </ul>
+
+        <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+          ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+          egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+          eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+          Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet,
+          wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum
+          rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+          turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+          faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+          Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+          facilisis luctus, metus
+        </p>
+
+        <ul>
+          <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+          <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+          <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+          <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+       </ul>
+                   
       </div>
     </div>
 

@@ -1,7 +1,7 @@
 {
   "name": "100vh-bootstrap-sidemenu",
   "version": "1.0.0",
-  "description": "- Bootstrap\n- HTML\n- jQuery\n\nOriginally written for a client in Django templates with SCSS. ",
+  "description": "Written in HTML, jQuery, and Bootstrap.\n\nOriginally written for a client in Django templates with SCSS. ",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
